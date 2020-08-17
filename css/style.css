@@ -1,0 +1,186 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #EDF5E0;
+    font-family: roboto, sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8DE4AF;
+    width: 100vw;
+    height: 45px;
+    color: #05396B;
+}
+
+a{
+    text-decoration: none;
+}
+
+header p{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+
+#headerIcons{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    opacity: 60%;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 270px;
+    height: 270px;
+}
+
+
+#valor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+#selectionDiv{
+    color: #389583;
+    font-style: italic;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+}
+
+#selectionDiv p{
+    margin: 38px 0 19px 0;
+}
+
+.selection{
+    font-size: 25px;
+    height: 30px;
+    text-transform: uppercase;
+    background-color: transparent;
+    width: 80px;
+    font-style: italic;
+    text-align: center;
+    outline: none;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: transparent;
+}
+
+.caixaSelecao{
+    display: flex;
+    align-items: center;
+
+}
+
+.caixaSelecao p{
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 50px;
+    text-align: center;
+}
+
+#convertBtn{
+    font-size: 20px;
+    width: 130px;
+    height: 45px;
+    margin: 10px 0 0 0;
+    outline: none;
+    border: none;
+    font-variant-caps: small-caps;
+    color: white;
+    background-color: #389583;
+}
+
+#convertBtn:hover{
+    cursor: pointer;
+}
+
+
+
+
+#resultadoConvert{
+    text-align: center;
+    font-size: 30px;
+    width: 90%;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+}
+
+
+#lastConv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    opacity: 50%;
+    width: 80%;
+    height: 100px;
+    top: 100px;
+}
+
+#lastConv p{
+    color: #389583;
+    margin: 0;
+    font-size: 18px;
+}
+
+
+
+#moedasDisponiveis{
+    font-size: 13px;
+    opacity: 50%;
+    position: fixed;
+    bottom: 10px;
+    color: #389583;
+    letter-spacing: 1px;
+    width: 80%;
+    text-align: center;
+}
+
+@media (orientation: landscape){
+    #lastConv{
+        top: 50px;
+    }
+}

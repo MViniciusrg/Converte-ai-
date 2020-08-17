@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converte Aí</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/all.min.js"></script>
+</head>
+<body>
+    
+    <header >
+        <a href="index.html"><p>Converte Aí!</p></a>
+        <div id="headerIcons">
+            <i class="fas fa-chart-line"></i>
+        </div>
+    </header>
+
+    <main>
+
+        <div id="container">
+
+            <div id="selectionDiv">
+
+
+                <div id="lastConv">
+                    <p id="ultimoValor">sem conversões realizadas</p>
+                </div>
+
+
+                <div class="caixaSelecao">
+                    <input type="text" id="selection01"
+                    class="selection" maxlength="4">
+    
+                    <p>></p>
+    
+                    <input type="text" id="selection02" class="selection" maxlength="4">
+                </div>
+            
+
+                <input type="button" id="convertBtn" value="converter">
+
+            </div>
+            
+    
+
+            <div id="valor">
+                <p id="resultadoConvert"></p>
+            </div>
+            <div id="dados">
+
+            </div>
+            
+            
+        </div>
+
+    </main>
+
+    <p id="moedasDisponiveis"> <b>moedas disponíveis:</b> <br> <br> ARS, AUD, BTC, CAD, CHF, CNY, ETH, EUR, GBP, ILS, JPY, LTC, USD, USDT, XRP</p>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
